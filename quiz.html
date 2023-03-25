@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+</head>
+<body>
+    <div>
+        <h2 align="center">Maths Quiz</h2>
+    </div>
+
+    <b>Question 1.</b> <br>
+    What is 10+20 ?<br>
+    <input type="radio" name="question1" onclick="correct()">30 &ensp;
+    <input type="radio" name="question1">8 <br>
+    <input type="radio" name="question1">9 &ensp; &nbsp;
+    <input type="radio" name="question1">10 <br>
+
+    <b>Question 2.</b> <br>
+    What is 15/3 ?<br>
+    <input type="radio" name="question2">4.5 &ensp;
+    <input type="radio" name="question2">3 <br>
+    <input type="radio" name="question2" onclick="correct()">5 &ensp; &nbsp;
+    <input type="radio" name="question2">9 <br>
+
+    <b>Question 3.</b> <br>
+    What is 5*2 ?<br>
+    <input type="radio" name="question3">25 &nbsp; &ensp;
+    <input type="radio" name="question3" onclick="correct()">10 <br>
+    <input type="radio" name="question3">2.5 &ensp; &nbsp;
+    <input type="radio" name="question3">2 <br>
+
+    <b>Question 4.</b> <br>
+    What is 20-10 ?<br>
+    <input type="radio" name="question4">5 &ensp; &nbsp; &ensp;
+    <input type="radio" name="question4" onclick="correct()">10 <br>
+    <input type="radio" name="question4">30 &ensp; &nbsp; 
+    <input type="radio" name="question4">15 <br>
+
+    <b>Question 5.</b> <br>
+    What is 10+20-5*2 ?<br>
+    <input type="radio" name="question5">10 &ensp; &nbsp;
+    <input type="radio" name="question5" onclick="correct()">20 <br>
+    <input type="radio" name="question5">30 &ensp; &nbsp;
+    <input type="radio" name="question5">15 <br>
+
+    <input type="submit" name="submit" value="SubmitQuiz" onClick="result()">
+    <button><a href="#" style="text-decoration: none;">Reload</a></button>
+
+    <script type="text/javascript">
+        let score=0;
+        function correct(){
+            score++;
+        }
+        function result() {   
+            alert("Your score is:" +score);
+        }
+    </script>
+</body>
+</html>
